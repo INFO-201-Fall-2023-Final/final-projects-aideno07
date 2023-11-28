@@ -22,8 +22,7 @@ df <- merge(wage_df, inflation_df[, c("Year", "Average_Inflation")], by = "Year"
 #above 2.0 displays high inflation.
 df$Inflation_Category <- ifelse(df$Average_Inflation < 2.0, "Low Inflation", "High Inflation")
 
-#This dataframe summarizes each years inflation rate by its Federal Minimum Wage and CPI Average.
-
+#This dataframe summarizes each years inflation rate by its Federal Minimum Wage and CPI Average. (Summarization Data Frame)
 sum_df <- aggregate(cbind(Average_Inflation, CPI.Average, Federal.Minimum.Wage) ~ Year, data = df, FUN = mean, na.rm = TRUE)
 
  
