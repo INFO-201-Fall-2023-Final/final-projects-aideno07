@@ -1,2 +1,2 @@
-# final-projects-aideno07
-final-projects-aideno07 created by GitHub Classroom
+# final-projects- Aiden O, Matthew Yi, John Kim
+final-projects- Aiden O, Matthew Yi, John Kim
