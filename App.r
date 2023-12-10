@@ -11,7 +11,7 @@ library(ggplot2)
 ui <- fluidPage(
   titlePanel("Examining Minimum Wage Rates and Inflation Rates in the U.S."),
     mainPanel(
-    tabsetPanel(type = "tab",
+    tabsetPanel(type = "pills",
               tabPanel("Introduction", tableOutput("example"),
                   h2("About the project"),
                   p("Over the past two decades, the alarming rise in US inflation has outpaced adjustments in job wages, leaving many citizens grappling with financial hardship. 
