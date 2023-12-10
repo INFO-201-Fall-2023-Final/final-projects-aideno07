@@ -1,4 +1,4 @@
-# Matthew Yi, Aiden Oh, John Kim 
+# Matthew Yi, Aiden O, John Kim 
 # 12-6-2023
 # I worked on this project with my teammates 
 
