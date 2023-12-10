@@ -34,10 +34,7 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   output$minWageScatterPlot <- renderPlot({
-    # Filter data based on selected years
     selected_years_data <- filter(sum_df, Year %in% input$selectedYears)
-    
-    # Render a scatter plot of minimum wage rates for selected years
     ggplot(selected_years_data, aes(x = as.factor(Year), y = Federal.Minimum.Wage)) +
       geom_point(aes(color = factor(Year)), size = 3) +
       scale_y_continuous(limits = c(0, max(sum_df$Federal.Minimum.Wage) * 1.2)) +
