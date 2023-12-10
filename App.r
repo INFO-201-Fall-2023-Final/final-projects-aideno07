@@ -6,6 +6,7 @@ library(dplyr)
 library(shiny)
 library(ggplot2)
 
+source("Final Project Data Wrangling.R")
 ui <- fluidPage(
   titlePanel("Examining Minimum Wage Rates and Inflation Rates in the U.S."),
   mainPanel(
