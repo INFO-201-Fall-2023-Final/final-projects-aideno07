@@ -25,15 +25,14 @@ ui <- fluidPage(
                       All in all, we believe that our study is of high importance because it illustrates how inflation and minimum wage rates are affecting low and middle-income communities. 
                       Due to the issue at hand, we desire to examine the problem more closely and identify any trends or patterns.")),
                 
-                 tabPanel("Minimum Wage Rates", verbatimTextOutput("Test")),
-                 tabPanel("Inflation Rates", verbatimTextOutput("Test")), 
-                 tabPanel("Comparing the two datasets", verbatimTextOutput("Test"))
+                  tabPanel("Minimum Wage Rates", textOutput("Test")),
+                  tabPanel("Inflation Rates", textOutput("Test")), 
+                  tabPanel("Comparing the two datasets", textOutput("Test"))
     )
   )
 )
 
 server <- function(input, output) {
-  
   
 }
 
@@ -41,6 +40,15 @@ server <- function(input, output) {
 
 
 
+
+
+
+
+
+
+
+
+shinyApp(ui = ui, server = server) 
 
 
 
