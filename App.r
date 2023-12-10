@@ -24,10 +24,7 @@ ui <- fluidPage(
                       Thus, upon completion, we expect our project to reveal the relationship between minimum wage and inflation rates throughout the U.S. 
                       All in all, we believe that our study is of high importance because it illustrates how inflation and minimum wage rates are affecting low and middle-income communities. 
                       Due to the issue at hand, we desire to examine the problem more closely and identify any trends or patterns.")),
-                    br(),
-                    h2("Synopsis of the Project Displayed in Tables"),
-                    br(),
-                    
+                    br()                    
                 tabPanel("Minimum Wage Rates", verbatimTextOutput("Test")),
                 tabPanel("Inflation Rates", verbatimTextOutput("Test")), 
                 tabPanel("Comparing the two datasets", verbatimTextOutput("Test"))
