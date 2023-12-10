@@ -9,7 +9,7 @@ library(shiny)
 library(ggplot2)
 
 ui <- fluidPage(
-  titlePanel("Examining Minimum Wage Rates and Inflation Rates in the U.S.")
+  titlePanel("Examining Minimum Wage Rates and Inflation Rates in the U.S."),
     mainPanel(
     tabsetPanel(type = "tab",
               tabPanel("Introduction", tableOutput("example"),
