@@ -2,7 +2,7 @@ library(dplyr)
 library(stringr)
 library(ggplot2)
 
-wage_df <- read.csv("Minimum Wage Data (1).csv")
+wage_df <- read.csv("Minimum Wage Data.csv")
 inflation_df <- read.csv("seriesreport.csv")
 
 #Remove unnecessary column
