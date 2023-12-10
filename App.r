@@ -20,8 +20,15 @@ ui <- fluidPage(
       the US faces difficulties in finding effective solutions, raising the question: How much must the minimum wage increase to keep pace with inflation?"),
     br(),
     p("Through this project, we hope to highlight ")
-    
 
+    mainPanel(
+    tabsetPanel(type = "tab",
+                tabPanel("Data", tableOutput("example")),
+                tabPanel("Page 1 Test", verbatimTextOutput("Test")),
+                tabPanel("Test TAB", verbatimTextOutput("Test"))
+    )
+  )
+    
 
 
 
@@ -34,7 +41,6 @@ server <- function(input, output) {
   
 }
 
-tabPanel("Page 1 Test", 
 
 
 
