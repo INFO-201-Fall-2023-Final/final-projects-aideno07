@@ -25,9 +25,12 @@ ui <- fluidPage(
                       Thus, upon completion, we expect our project to reveal the relationship between minimum wage and inflation rates throughout the U.S. 
                       All in all, we believe that our study is of high importance because it illustrates how inflation and minimum wage rates are affecting low and middle-income communities. 
                       Due to the issue at hand, we desire to examine the problem more closely and identify any trends or patterns.")),
-                  tabPanel("Minimum Wage Rates", textOutput("Test")),
-                  tabPanel("Inflation Rates", textOutput("Test")), 
-                  tabPanel("Comparing the two datasets", textOutput("Test"))
+                  tabPanel("Minimum Wage Rates", textOutput("Test"),  
+                          h2("the minimum wage has also increase in most places trying to keep up with the inflation rate")),
+                  tabPanel("Inflation Rates", textOutput("Test"),
+                          h2("At the same time, the inflation rate has also increased due to a multitude of reasons, Covid-19 in particular")), 
+                  tabPanel("Comparing the two datasets", textOutput("Test"),
+                          h2("Now lets look at the minimum wage and inflation rates side by side"))
     )
   )
 )
