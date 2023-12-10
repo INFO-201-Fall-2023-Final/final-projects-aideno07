@@ -4,10 +4,14 @@
 
 library(dplyr)
 library(stringr)
-library(stringr)
+library(plotly)
 library(shiny)
+library(ggplot2)
 
-
+ui <- fluidPage(
+  titlePanel("Examining Minimum Wage Rates and Inflation Rates in the U.S.")
+  br
+)
 
 
 
