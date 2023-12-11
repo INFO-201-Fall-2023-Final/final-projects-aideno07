@@ -76,7 +76,7 @@ server <- function(input, output) {
   })
   
   output$minWageText <- renderText({
-    "Summary of Graph:\n\nThe scatterplot above shows the slight increase in Federal Minimum Wage over the past 20 years.
+    "Summary of Minimum Wage Graph:\n\nThe scatterplot above shows the slight increase in Federal Minimum Wage over the past 20 years.
     With this plot, we are able to see how rare of an occurrence it is for the Minimum Wage to increase.
     As we can see, the minimum wage has only increased 2.1 dollars over a total of 20 years."
   })
