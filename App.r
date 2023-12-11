@@ -17,7 +17,9 @@ ui <- fluidPage(
     tabsetPanel(type = "pills",
                 tabPanel("Introduction", tableOutput("example"),
                          h2("About the project"),
+                         br(),
                          h5("Project Members: John Kim, Matthew Yi, Aiden Oh"),
+                         br(),
                          p("Over the past two decades, the alarming rise in US inflation has outpaced adjustments in job wages, leaving many citizens grappling with financial hardship. 
                     Soaring costs of living, coupled with stagnant wages, make it increasingly challenging to maintain financial stability, pushing individuals into a cycle of economic despair. 
                     The widening wage gap exacerbates poverty rates, a persistent issue in the US. As savings are depleted, unemployment rises, and social unrest grows, poverty and homelessness surge. 
