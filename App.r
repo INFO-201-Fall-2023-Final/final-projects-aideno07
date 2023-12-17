@@ -17,9 +17,6 @@ ui <- fluidPage(
     tabsetPanel(type = "pills",
                 tabPanel("Introduction", tableOutput("example"),
                          h2("About the project"),
-                         br(),
-                         h5("Project Members: John Kim, Matthew Yi, Aiden Oh"),
-                         br(),
                          p("Over the past two decades, the alarming rise in US inflation has outpaced adjustments in job wages, leaving many citizens grappling with financial hardship. 
                     Soaring costs of living, coupled with stagnant wages, make it increasingly challenging to maintain financial stability, pushing individuals into a cycle of economic despair. 
                     The widening wage gap exacerbates poverty rates, a persistent issue in the US. As savings are depleted, unemployment rises, and social unrest grows, poverty and homelessness surge. 
@@ -49,7 +46,14 @@ ui <- fluidPage(
                                      min = min(sum_df$Year), max = max(sum_df$Year), value = c(min(sum_df$Year), max(sum_df$Year)),
                                      step = 1),
                          plotOutput("inflationComparisonGraph"),
-                         verbatimTextOutput("comparisonText"))
+                         verbatimTextOutput("comparisonText")),
+                tabPanel("Summary",
+                         h2("Summary"),
+                         h5("Project Members: John Kim, Matthew Yi, Aiden Oh"),                         
+                         verbatimTextOutput("summaryText"),
+                         h5("Data Set Sources"),
+                         verbatimTextOutput("sourcesText")
+                ),
     )
   )
 )
@@ -139,6 +143,24 @@ server <- function(input, output) {
     not adjusting the increased inflation rate.
     It’s important that these rates make adequate changes in accordance with the minimum wage
     in order to prevent a decline of the standards of living, especially for the middle to lower class."
+  })
+  
+  output$summaryText <- renderText({
+    "Inflation in the United States has been consistently high, impacting the cost of living for citizens. 
+    Despite this rise, the federal minimum wage has shown minimal changes, 
+    failing to keep pace with the increased cost of goods and services.
+    This lack of adjustment in minimum wage rates has led to a mismatch, 
+    where the purchasing power of individuals has not kept up with the rising costs of goods and services.
+    Many people experience the direct consequences of this mismatch, 
+    struggling to meet basic daily needs and facing financial hardships. 
+    Addressing the gap between inflation and minimum wage is crucial to improving the living standards, 
+    particularly for those in the middle to lower-income brackets.
+    These adjustments can ultimately create a better life for many citizens,
+    keeping many out of the streets and able to live life more comfortably."
+  })
+  output$sourcesText <- renderText({
+    "- https://www.kaggle.com/datasets/lislejoem/us-minimum-wage-by-state-from-1968-to-2017 
+- https://data.bls.gov/pdq/SurveyOutputServlet"
   })
   
 }
