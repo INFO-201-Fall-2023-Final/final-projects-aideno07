@@ -152,11 +152,11 @@ server <- function(input, output) {
     This lack of adjustment in minimum wage rates has led to a mismatch, 
     where the purchasing power of individuals has not kept up with the rising costs of goods and services.
     Many people experience the direct consequences of this mismatch, 
-    struggling to meet basic daily needs and facing financial hardships. 
+    struggling to meet basic daily needs and face financial hardships. 
     Addressing the gap between inflation and minimum wage is crucial to improving the living standards, 
     particularly for those in the middle to lower-income brackets.
-    These adjustments can ultimately create a better life for many citizens,
-    keeping many out of the streets and able to live life more comfortably."
+    Minimum wage should slightly be adjusted during times of high inflation,
+    increasing with the rate of inflation to ensure a balance in budget and also to help people be financially secure."
   })
   output$sourcesText <- renderText({
     "- https://www.kaggle.com/datasets/lislejoem/us-minimum-wage-by-state-from-1968-to-2017 
